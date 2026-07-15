@@ -27,7 +27,7 @@ Notes:
   - Example:
     - `NO_CHECK_FUNCTION_LEN=1 NO_CHECK_FORMATTING=1 ./tools/check_bioc.sh`
 
-Latest local run (2026-07-15, OmicsLake 0.99.2):
+Latest local run (2026-07-15, OmicsLake 0.99.3):
 - `R CMD check`: `Status: OK`
 - `BiocCheck`: `0 ERRORS | 0 WARNINGS | 8 NOTES`
 - Remaining BiocCheck NOTE categories are advisory coding-style checks,
@@ -69,8 +69,10 @@ GitHub Actions should pass:
 - Submission issue: https://github.com/Bioconductor/BiocContributions/issues/97
 - Policies accepted and the package was cloned to BiocStaging.
 - The first external build identified two optional-adapter test assumptions and
-  one Windows-only path assertion. OmicsLake 0.99.2 corrects those checks without
-  changing package runtime behavior.
+  one Windows-only path assertion. OmicsLake 0.99.2 corrected those checks.
+- OmicsLake 0.99.3 standardizes optional agent-context capture on the
+  package-specific `OL_*` environment variables and uses neutral
+  software-agent terminology in tests and documentation.
 
 The tracker and BiocStaging builds should be monitored after each devel update.
 

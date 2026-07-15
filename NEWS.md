@@ -1,5 +1,13 @@
 # OmicsLake NEWS
 
+## OmicsLake 0.99.3
+
+- Standardized optional agent-context capture on the package-specific
+  `OL_PROMPT_ID`, `OL_AGENT_RUN_ID`, and `OL_AGENT_NAME` environment
+  variables.
+- Replaced tool-specific labels in tests and documentation with neutral
+  software-agent terminology.
+
 ## OmicsLake 0.99.2
 
 - Declared the optional `xcms` and `Chromatograms` adapter dependencies and
